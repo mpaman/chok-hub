@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>chok hub</title>
+  <meta name="description" content="รวมเว็บของ chok — ปฏิทินวันลาทีม และห้องฟังเพลงด้วยกัน" />
+  <meta name="theme-color" content="#12101c" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="hub">
+    <header class="hub-head">
+      <img class="logo" src="img/spider-face.png" alt="" width="64" height="64" />
+      <div>
+        <p class="eyebrow">SELECT STAGE</p>
+        <h1>chok hub</h1>
+      </div>
+    </header>
+
+    <nav class="stages" aria-label="เว็บทั้งหมด">
+      <!-- เว็บเพลงอยู่บน Render free ซึ่งหลับเมื่อไม่มีคนเข้า — hub.js ปลุกให้ตั้งแต่เปิดหน้านี้ -->
+      <a class="stage stage-music" href="https://listen-with-chok.onrender.com" data-wake="https://listen-with-chok.onrender.com/api/config">
+        <span class="stage-no">01</span>
+        <span class="stage-icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M6 2h8v9h-1v1h-2v-1h-1V9h1V8h2V5H8v7H7v1H5v-1H4v-2h1V9h2V3h-1z" fill="currentColor"/></svg>
+        </span>
+        <span class="stage-body">
+          <span class="stage-title">ฟังเพลงกับ chok</span>
+          <span class="stage-desc">เปิดเพลง YouTube ฟังพร้อมกันทั้งห้อง ทุกคนคุมคิวได้ มีลาน 3D ให้เดินเล่น</span>
+          <span class="status" data-status="waking" role="status">
+            <span class="dot" aria-hidden="true"></span><span class="status-text">กำลังปลุก server…</span>
+          </span>
+        </span>
+        <span class="press">PRESS ▶</span>
+      </a>
+
+      <a class="stage stage-leave" href="https://team-leave-beta.vercel.app">
+        <span class="stage-no">02</span>
+        <span class="stage-icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M4 1h2v2h4V1h2v2h2v12H2V3h2zM3 6v8h10V6zm2 2h2v2H5zm4 0h2v2H9z" fill="currentColor"/></svg>
+        </span>
+        <span class="stage-body">
+          <span class="stage-title">ปฏิทินวันลาทีม</span>
+          <span class="stage-desc">ลงวันลา ดูว่าใครลาวันไหน เตือนลาชนหรือเกินโควตา สรุปเข้า Teams ทุกเช้า</span>
+          <span class="status" data-status="ready">
+            <span class="dot" aria-hidden="true"></span><span class="status-text">พร้อมใช้งาน</span>
+          </span>
+        </span>
+        <span class="press">PRESS ▶</span>
+      </a>
+    </nav>
+
+    <footer class="hub-foot">
+      <span>เว็บใหม่จะมาต่อตรงนี้</span>
+      <span class="blink" aria-hidden="true">_</span>
+    </footer>
+  </main>
+
+  <script src="hub.js" type="module"></script>
+</body>
+</html>
