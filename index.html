@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>chok hub</title>
-  <meta name="description" content="รวมเว็บของ chok — ปฏิทินวันลาทีม และห้องฟังเพลงด้วยกัน" />
+  <meta name="description" content="รวมเว็บของ chok — ปฏิทินวันลาทีม ห้องฟังเพลงด้วยกัน และสมุดรายรับรายจ่าย" />
   <meta name="theme-color" content="#12101c" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png" />
@@ -49,6 +49,22 @@
         <span class="stage-body">
           <span class="stage-title">ปฏิทินวันลาทีม</span>
           <span class="stage-desc">ลงวันลา ดูว่าใครลาวันไหน เตือนลาชนหรือเกินโควตา สรุปเข้า Teams ทุกเช้า</span>
+          <span class="status" data-status="ready">
+            <span class="dot" aria-hidden="true"></span><span class="status-text">พร้อมใช้งาน</span>
+          </span>
+        </span>
+        <span class="press">PRESS ▶</span>
+      </a>
+
+      <!-- ชี้ root ไม่ใช่ /login — ยังไม่ล็อกอินเว็บจะเด้งไป /login เอง ล็อกอินอยู่แล้วเข้าภาพรวมได้ทันที -->
+      <a class="stage stage-money" href="https://money-tracker-zeta-ashen.vercel.app">
+        <span class="stage-no">03</span>
+        <span class="stage-icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M2 3h10v2h2v8H2zM3 6v6h10V6zm7 2h3v2h-3z" fill="currentColor"/></svg>
+        </span>
+        <span class="stage-body">
+          <span class="stage-title">สมุดเงิน รายรับรายจ่าย</span>
+          <span class="stage-desc">จดรายรับรายจ่าย สรุปรายเดือนแยกหมวด ส่งสลิปเข้า LINE แล้วบันทึกให้เอง</span>
           <span class="status" data-status="ready">
             <span class="dot" aria-hidden="true"></span><span class="status-text">พร้อมใช้งาน</span>
           </span>
